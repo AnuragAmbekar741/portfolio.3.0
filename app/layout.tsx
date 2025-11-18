@@ -1,16 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Instrument_Serif, Diplomata_SC, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/provider/theme-provider";
+import MainLayout from "@/components/layout/MainLayout";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
   subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const diplomataSC = Diplomata_SC({
+  variable: "--font-diplomata-sc",
   subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${instrumentSerif.variable} ${diplomataSC.variable} ${inter.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
@@ -34,7 +47,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          {/* <BackgroundRippleEffect cellSize={20} /> */}
+          <MainLayout>{children}</MainLayout>
         </ThemeProvider>
       </body>
     </html>

@@ -96,7 +96,7 @@ const DivGrid = ({
         return (
           <div
             key={idx}
-            className="relative border-[0.5px] opacity-30"
+            className="relative border-[0.5px]"
             style={{
               backgroundColor: fillColor,
               borderColor: borderColor,

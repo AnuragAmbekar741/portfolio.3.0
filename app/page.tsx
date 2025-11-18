@@ -1,10 +1,11 @@
-import { BackgroundRippleEffect } from "@/components/ui/RippleEffectBg";
+import { Profile } from "@/components/profile/Profile";
+import { About } from "@/components/about/About";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
-      <BackgroundRippleEffect cellSize={50} />
-      <div className="relative z-10">{/* Your content */}</div>
-    </div>
+    <main>
+      <Profile />
+      <About />
+    </main>
   );
 }
