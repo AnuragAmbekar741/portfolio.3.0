@@ -12,14 +12,14 @@ export const ProjectStack: React.FC = () => {
         )}
       >
         <div className="flex items-center justify-center py-2.5 px-1">
-          <h3 className="diplomata-sc-regular text-[2.5rem] font-bold tracking-tighter">
+          <h3 className="diplomata-sc-regular text-[2rem] md:text-[2.5rem] font-bold tracking-tighter">
             PROJECT
           </h3>
         </div>
       </div>
       <div className="w-1/2 border border-t-0">
         <div className="flex items-center justify-center p-2.5">
-          <h3 className="diplomata-sc-regular text-[2.5rem] font-bold tracking-tighter text-[#FF0069]">
+          <h3 className="diplomata-sc-regular text-[2rem] md:text-[2.5rem] font-bold tracking-tighter text-[#FF0069]">
             STACK
           </h3>
         </div>

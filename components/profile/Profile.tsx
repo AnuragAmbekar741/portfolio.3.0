@@ -26,7 +26,7 @@ export const Profile: React.FC = () => {
       </div>
       <div className="w-4/5">
         <h1
-          className="diplomata-sc-regular text-[3.75rem] px-1.5 font-normal tracking-tighter leading-12"
+          className="diplomata-sc-regular md:text-[3rem] lg:text-[3.75rem] px-1.5 font-normal tracking-tighter leading-12"
           style={{ transform: "scaleY(1.5)" }}
         >
           <span className="text-primary">
