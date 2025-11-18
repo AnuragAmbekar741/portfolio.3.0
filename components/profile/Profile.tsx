@@ -36,7 +36,9 @@ export const Profile: React.FC = () => {
             />
           </span>
           <br />
-          <span className="inline-block -mt-2">ENGINEER</span>
+          <span className="inline-block -mt-2 dark:text-stone-200">
+            ENGINEER
+          </span>
         </h1>
       </div>
     </div>

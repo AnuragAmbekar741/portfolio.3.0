@@ -8,14 +8,16 @@ export const About: React.FC = () => {
   return (
     <div className="flex items-center justify-between border border-t-0">
       <div className="w-4/5 p-6 font-inter">
-        <p className="text-md font-extralight leading-relaxed">
-          Hi, I am <span className="font-semibold">Anurag</span> — my favourite
+        <p className="text-sm font-light leading-relaxed">
+          Hi, I am <span className="font-semibold">Anurag</span>, my favourite
           anime character is <span className="font-semibold">Itachi</span> and I
           am a <span className="font-semibold">Gooner</span>. I love building
           products and work at the intersection of{" "}
           <span className="font-semibold">growth</span> and{" "}
           <span className="font-semibold">software engineering</span> to map my
-          code with business impact.
+          code with business impact. <br />
+          PS : Don&apos;t get overwhelmed by this cool design I am equally
+          robust engineer!
         </p>
       </div>
       <div className="w-1/5">
